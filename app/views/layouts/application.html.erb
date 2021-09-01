@@ -16,7 +16,7 @@
 
       <a href="http://www.localhost:3000/" class="logo"><%= image_tag('logo.jpg', width: '100px' , height: '40px') %></a>
 
-    <span style="padding: 0px 5px 0px 0px;">
+    <span style="padding: 0px 20px 0px 0px;">
       <%= link_to "Ideas Index Page" , posts_path %>
     </span>
 
@@ -29,7 +29,7 @@
                   <% end %>
   </div>
   <span style="display: flex; justify-content: flex-end; padding: 10px;">
-    <%= link_to "New Idea" , new_post_path, :class=> "btn" %>
+    <%= link_to "New Idea" , new_post_path, :class=> "btn btn-outline-secondary" %>
   </span>
     <hr>
 

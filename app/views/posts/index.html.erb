@@ -1,7 +1,9 @@
+<div class="index-div">
 <%= @posts.each do |post| %>
 <h2><%= link_to post.title, post_path(post) %></h2>
 <p><%= post.body %></p>
+<p> By: <%= current_user.first_name %></p>
 <hr>
 <% end %>
-
+</div>
 

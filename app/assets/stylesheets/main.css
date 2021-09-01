@@ -1,6 +1,7 @@
 .navbar {
     display: flex;
     justify-content: flex-end;
+    padding: 10px;
 }
 
 .signup-div {
@@ -25,7 +26,7 @@
     padding: 10px;
     border: 5px solid grey;
     margin: 10px;
-    width: 15%;
+    width: 20%;
     border-radius: 5px;
 }
 
@@ -43,11 +44,32 @@
     padding: 10px;
     border: 5px solid grey;
     margin: 10px;
-    width: 15%;
+    width: 20%;
     border-radius: 5px;
 }
 
 .logo {
     margin-right: auto;
     padding: 10px 0px 0px 0px;
+}
+
+.edit-div {
+    display: flex;
+    justify-content: center;
+}
+
+.edit-div-child {
+    padding: 10px;
+    border: 5px solid grey;
+    margin: 10px;
+    width: 20%;
+    border-radius: 5px;
+}
+
+.show-div {
+    padding: 10px;
+}
+
+.index-div {
+    padding: 10px;
 }

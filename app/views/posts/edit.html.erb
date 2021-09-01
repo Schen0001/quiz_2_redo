@@ -1,6 +1,7 @@
-<h1>This is the edit page</h1>
-<hr>
+<h1 style="text-align: center;">Edit Idea</h1>
 
+<div class="edit-div">
+    <div class="edit-div-child">
 <%= form_for(@post) do |f| %>
 <%= f.label :title %> <br>
 <%= f.text_field :title, :placeholder => "cool robot etc.." %> <br> <br>
@@ -8,3 +9,5 @@
 <%= f.text_area :body, :placeholder => "Description of your idea..." %> <br> <br>
 <%= f.submit "Edit" %>
 <% end %>
+</div>
+</div>
