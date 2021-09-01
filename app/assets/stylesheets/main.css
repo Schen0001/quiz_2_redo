@@ -1,3 +1,8 @@
+body {
+    background-image: url("background-image.jpg");
+    background-size: 1920px 1080px;
+}
+
 .navbar {
     display: flex;
     justify-content: flex-end;

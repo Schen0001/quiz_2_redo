@@ -22,7 +22,7 @@
 
       <% if user_signed_in? %>
         Hello Mr./Mrs. <%= current_user.last_name %>,
-          <%= link_to "Logout" , sessions_path, method: :delete, data: {confirm: "are you sure you want to log out?" }%>
+          <span style="padding: 0px 0px 0px 5px;"><%= link_to "Logout" , sessions_path, method: :delete, data: {confirm: "are you sure you want to log out?" }%></span>
             <% else %>
               <%= link_to "Login" , new_sessions_path %> |
                 <%= link_to "Sign Up" , new_user_path %> 
