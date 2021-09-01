@@ -1,15 +1,13 @@
-<h1>Sign In</h1>
+<h1 style="text-align: center;">Sign In</h1>
 
-<%= form_tag sessions_path do %>
-  <div>
-    <%= label_tag :email %>
-    <%= email_field_tag :email %>
-  </div>
-  <div>
-    <%= label_tag :password %>
-    <%= password_field_tag :password %>
-  </div>
-  <div>
-    <%= submit_tag "Log In" %>
-  </div>
-<% end %>
+<div class="signin-div">
+  <div class="signin-div-child">
+  <%= form_tag sessions_path do %>
+    <%= label_tag :email %> <br>
+      <%= email_field_tag :email %> <br> <br>
+        <%= label_tag :password %> <br>
+          <%= password_field_tag :password %> <br> <br>
+            <%= submit_tag "Log In" %>
+              <% end %>
+            </div>
+</div>

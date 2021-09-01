@@ -1,0 +1,13 @@
+<h1 style="text-align: center;">Add an idea</h1>
+
+<div class="new-div">
+    <div class="new-div-child">
+        <%= form_for(@new_post) do |f| %>
+            <%= f.label "Idea title" %> <br>
+                <%= f.text_field :title, :placeholder=> "cool robot etc.." %> <br> <br>
+                    <%= f.label "Description" %> <br>
+                        <%= f.text_area :body, :placeholder=> "Description of your idea..." %> <br> <br>
+                            <%= f.submit "Add Idea" %>
+                                <% end %>
+    </div>
+</div>

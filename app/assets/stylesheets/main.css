@@ -1,0 +1,48 @@
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.signup-div {
+    display: flex;
+    justify-content: center;
+}
+
+.signup-div-child {
+    padding: 10px;
+    border: 5px solid grey;
+    margin: 10px;
+    width: 20%;
+    border-radius: 5px;
+}
+
+.signin-div {
+    display: flex;
+    justify-content: center;
+}
+
+.signin-div-child {
+    padding: 10px;
+    border: 5px solid grey;
+    margin: 10px;
+    width: 15%;
+    border-radius: 5px;
+}
+
+.new-idea.btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.new-div {
+    display: flex;
+    justify-content: center;
+}
+
+.new-div-child {
+    padding: 10px;
+    border: 5px solid grey;
+    margin: 10px;
+    width: 15%;
+    border-radius: 5px;
+}
