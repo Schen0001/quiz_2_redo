@@ -46,3 +46,8 @@
     width: 15%;
     border-radius: 5px;
 }
+
+.logo {
+    margin-right: auto;
+    padding: 10px 0px 0px 0px;
+}
