@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz2Redo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_pack_tag 'application' %>
+  </head>
+
+  <body>
+
+    <% if user_signed_in? %>
+      Hello <%= current_user.full_name %>,
+        <%= link_to "Logout" , session_path, method: :delete, data: {confirm: "are you sure you want to log out?" }%>
+          <% else %>
+            <%= link_to "Login" , new_session_path %> |
+              <%= link_to "Sign Up" , new_user_path %>
+                <% end %>
+                  <hr>
+
+    <%= yield %>
+  </body>
+</html>
