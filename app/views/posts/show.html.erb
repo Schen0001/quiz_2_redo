@@ -29,6 +29,15 @@
                 <small>
                     <%= time_ago_in_words(review.created_at) %>
                 </small> <br>
+
+                    <%= button_to( "Delete", post_review_path(review), method: :delete, data: { confirm: "Are you sure?" },
+                        class: "some-css-class" ) %>
+
+                <hr>
+
+                
+                    
+                
                 <% end %>
 
 
