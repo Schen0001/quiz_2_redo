@@ -10,6 +10,8 @@ class PostsController < ApplicationController
 
     def show 
         @post = Post.find(params[:id])
+        @review = Review.new
+        @reviews = @post.reviews.order(created_at: :desc)
     end
 
     def new 

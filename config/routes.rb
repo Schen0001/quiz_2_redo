@@ -3,26 +3,34 @@ Rails.application.routes.draw do
   resources :users, only: [:new, :create]
   resource :sessions, only: [:new, :destroy, :create]
 
+  resources :posts
+
+  resources :posts do
+    resources :reviews, only: [:create, :destroy]
+  end
+
+  
+
 
   root 'posts#welcome'
 
-  # index
-  get '/posts' => 'posts#index', as: :posts
+  # # index
+  # get '/posts' => 'posts#index', as: :posts
 
-  # new
-  get '/posts/new' => 'posts#new', as: :new_post
-  post '/posts' => 'posts#create'
+  # # new
+  # get '/posts/new' => 'posts#new', as: :new_post
+  # post '/posts' => 'posts#create'
 
-  # show
-  get '/posts/:id' => 'posts#show', as: :post 
+  # # show
+  # get '/posts/:id' => 'posts#show', as: :post 
 
-  # edit
-  get '/posts/:id/edit' => 'posts#edit', as: :edit_post
+  # # edit
+  # get '/posts/:id/edit' => 'posts#edit', as: :edit_post
 
-  # patch
-  patch '/posts/:id' => 'posts#update'
+  # # patch
+  # patch '/posts/:id' => 'posts#update'
 
-  # delete
-  delete '/posts/:id' => 'posts#destroy'
+  # # delete
+  # delete '/posts/:id' => 'posts#destroy'
 
 end
